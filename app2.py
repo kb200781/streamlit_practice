@@ -4,7 +4,7 @@ import webbrowser
 
 st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:")
 
-selected = option_menu(None, ["Home", "How to use", "Let's Analyze", 'Contact Us'], 
+selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'], 
     icons=['house', 'question-circle', "twitter", 'envelope'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
@@ -19,5 +19,10 @@ if selected == "Home":
 if selected == "How to use":
     st.title("You entered how to use")
 
-if selected == "Let's Analyze":
-    st.title("You entered analyze")
+if selected == "Analyze":
+    genre = st.radio("What do you want to do",
+                     ('I want to analyze the tweets from a twitter account', 'I want to analyze a topic', 'I want to analyze my dataset'))
+    
+    if genre == "I want to analyze the tweets from a twitter account":
+        st.write("You will be redirected to another website")
+#         st.write("[Click Here >](https://project-se-ts-1.streamlit.app/)")
