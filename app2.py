@@ -44,7 +44,6 @@ if selected == "Contact Us":
         st.write("---")
         st.header("Get In Touch With Us!")
         st.subheader("Feel free to ask anything")
-        st.write("##")
 
         # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
         contact_form = """
