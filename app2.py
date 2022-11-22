@@ -33,6 +33,13 @@ if selected == "Analyze":
         st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
 
 if selected == "Contact Us":
+#     Use local CSS
+    def local_css(file_name):
+        with open(file_name) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+    local_css("style/style.css")
     with st.container():
         st.write("---")
         st.header("Get In Touch With Me!")
