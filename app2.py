@@ -1,6 +1,6 @@
 import streamlit
 
-st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:")
+# st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:")
 st.title("Twitter Sentiment Analysis")
 st.subheader("Hey there!!! :wave:")
 st.subheader("Welcome to our service")
