@@ -39,7 +39,7 @@ if selected == "Contact Us":
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-    local_css("style/style.css")
+    local_css("style.css")
     with st.container():
         st.write("---")
         st.header("Get In Touch With Me!")
