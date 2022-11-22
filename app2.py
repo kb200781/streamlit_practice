@@ -42,7 +42,8 @@ if selected == "Contact Us":
     local_css("style.css")
     with st.container():
         st.write("---")
-        st.header("Get In Touch With Me!")
+        st.header("Get In Touch With Us!")
+        st.subheader("Feel free to ask anything")
         st.write("##")
 
         # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
