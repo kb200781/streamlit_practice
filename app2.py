@@ -28,3 +28,6 @@ if selected == "Analyze":
         
     if genre == "I want to analyze a topic":
         st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-3.streamlit.app/)")
+        
+    if genre == "I want to analyze my dataset":
+        st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
