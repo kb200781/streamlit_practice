@@ -25,4 +25,4 @@ if selected == "Analyze":
     
     if genre == "I want to analyze the tweets from a twitter account":
         st.write("You will be redirected to another website")
-#         st.write("[Click Here >](https://project-se-ts-1.streamlit.app/)")
+        st.write("[Click Here >](https://project-se-ts-1.streamlit.app/)")
