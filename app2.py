@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:")
 
-selected = option_menu(None, ["Home", "How to use", "Analyze Tweets", 'Contact Us'], 
+selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'], 
     icons=['house', 'question-circle', "twitter", 'envelope'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
