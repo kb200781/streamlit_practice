@@ -24,5 +24,5 @@ if selected == "Analyze":
                      ('I want to analyze the tweets from a twitter account', 'I want to analyze a topic', 'I want to analyze my dataset'))
     
     if genre == "I want to analyze the tweets from a twitter account":
-        st.write("You will be redirected to another website")
-        st.write("Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
+        st.write("You will be redirected to another website\nPlease [Click Here >](https://project-se-ts-1.streamlit.app/)")
+#         st.write("Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
