@@ -1,2 +1,7 @@
 streamlit
 streamlit_option_menu
+pandas
+numpy
+tweepy
+textblob
+wordcloud
