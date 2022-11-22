@@ -15,21 +15,3 @@ if selected == "Home":
     st.subheader("Wondering what we do?")
     st.markdown("We **_analyze_** the tweets for you guys to")
     st.write("1. Clear your doubts\n 2. Authenticity of rumors\n 3. Give you a topic for your gossips\n 4. Help in your philosophical research\n and much more!!!")
-
-if selected == "How to use":
-    st.title("You are in how to use")
-
-if selected == "Analyze":
-    st.title("You are in analyze")
-    
-    genre = st.radio("What do you want to do",
-                     ("I want to analyze the tweets of a twitter account", "I want to analyze a topic", "I want to analyze my dataset"))
-    
-    if genre == "I want to analyze the tweets of a twitter account":
-        st.write("You will be forwaded to another website\n Please [click here](https://project-se-ts-1.streamlit.app/)")
-    
-    if genre == "I want to analyze a topic":
-        st.write("You will be forwaded to another website\n Please [click here](https://project-se-ts-3.streamlit.app/)")
-    
-    if genre == "I want to analyze my dataset":
-        st.write("You will be forwaded to another website\n Please [click here](https://project-se-ts-2.streamlit.app/)")
