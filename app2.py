@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import webbrowser
 
-st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:")
+st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:", layout="wide")
 
 selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'], 
     icons=['house', 'question-circle', "twitter", 'envelope'], 
