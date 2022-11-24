@@ -39,7 +39,7 @@ if selected == "How to use":
     with st.container():
         left_col, middle_col, right_col = st.columns(3)
         with middle_col:
-            st_lottie(lottie_coding2, height=300, width=800, key="coding")
+            st_lottie(lottie_coding2, height=300, key="coding")
 
 if selected == "Analyze":
     genre = st.radio("What do you want to do",
