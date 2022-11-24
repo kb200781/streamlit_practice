@@ -62,7 +62,7 @@ if selected == "Contact Us":
     with st.container():
         left_column, right_column = st.columns(2)
         with right_column:
-            st_lottie(lottie_coding1, height=400, key="coding")
+            st_lottie(lottie_coding1, height=550, key="coding")
         with left_column:
             st.write("---")
             st.header("Get In Touch With Us!")
