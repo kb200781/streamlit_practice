@@ -31,7 +31,7 @@ if selected == "Home":
             st.subheader("Wondering what we do?")
             st.markdown("We **_analyze_** the tweets for you guys to")
             st.write("1. Clear your doubts\n 2. Authenticity of rumors\n 3. Give you a topic for your gossips\n 4. Help in your philosophical research\n and much more!!!")
-        
+            st.write("Go to the Analyze tab to see the magic:sparkles::sparkles:")
         with right_column:
             st_lottie(lottie_coding, height=400, key="coding")
 
