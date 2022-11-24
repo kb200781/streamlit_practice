@@ -31,7 +31,7 @@ if selected == "Home":
             st.write("1. Clear your doubts\n 2. Authenticity of rumors\n 3. Give you a topic for your gossips\n 4. Help in your philosophical research\n and much more!!!")
         
         with right_column:
-            st_lottie(lottie_coding, height=300, key="coding")
+            st_lottie(lottie_coding, height=500, key="coding")
 
 if selected == "How to use":
     st.title("You entered how to use")
