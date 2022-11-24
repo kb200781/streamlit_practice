@@ -40,6 +40,10 @@ if selected == "How to use":
         left_col, middle_col, right_col = st.columns(3)
         with middle_col:
             st_lottie(lottie_coding2, height=300, key="coding")
+    
+    with st.container():
+        st.title("Didn't know how to use?!")
+        st.write("No need to worry, it's very simple")
 
 if selected == "Analyze":
     genre = st.radio("What do you want to do",
