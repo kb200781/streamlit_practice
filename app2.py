@@ -13,8 +13,8 @@ def load_lottieurl(url):
     return r.json()
 
 lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_m4wmgweb.json")
-
 lottie_coding1 = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_qxmkn9ou.json")
+lottie_coding2 = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_mn0yeqfs.json")
     
 
 selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'], 
@@ -36,7 +36,7 @@ if selected == "Home":
             st_lottie(lottie_coding, height=400, key="coding")
 
 if selected == "How to use":
-    st.title("You entered how to use")
+    st_lottie(lottie_coding2, height=300, width=400, key="coding")
 
 if selected == "Analyze":
     genre = st.radio("What do you want to do",
