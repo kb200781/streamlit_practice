@@ -36,7 +36,7 @@ if selected == "Home":
             st_lottie(lottie_coding, height=400, key="coding")
 
 if selected == "How to use":
-    st_lottie(lottie_coding2, height=300, width=400, key="coding")
+    st_lottie(lottie_coding2, height=300, width=800, key="coding")
 
 if selected == "Analyze":
     genre = st.radio("What do you want to do",
