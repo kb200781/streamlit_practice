@@ -13,6 +13,8 @@ def load_lottieurl(url):
     return r.json()
 
 lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_m4wmgweb.json")
+
+lottie_coding1 = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_qxmkn9ou.json")
     
 
 selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'], 
@@ -58,6 +60,9 @@ if selected == "Contact Us":
 
     local_css("style.css")
     with st.container():
+        left_column, right_column = st.columns(2)
+        with right_column:
+            st_lottie(lottie_coding1, height=400, key="coding")
         st.write("---")
         st.header("Get In Touch With Us!")
         st.subheader("Feel free to ask anything")
