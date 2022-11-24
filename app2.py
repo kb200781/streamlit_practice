@@ -63,22 +63,23 @@ if selected == "Contact Us":
         left_column, right_column = st.columns(2)
         with right_column:
             st_lottie(lottie_coding1, height=400, key="coding")
-        st.write("---")
-        st.header("Get In Touch With Us!")
-        st.subheader("Feel free to ask anything")
-
-        # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
-        contact_form = """
-        <form action="https://formsubmit.co/kbansal_be20@thapar.edu" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message here" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        """
-        left_column, right_column = st.columns(2)
         with left_column:
-            st.markdown(contact_form, unsafe_allow_html=True)
-        with right_column:
-            st.empty()
+            st.write("---")
+            st.header("Get In Touch With Us!")
+            st.subheader("Feel free to ask anything")
+
+            # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
+            contact_form = """
+            <form action="https://formsubmit.co/kbansal_be20@thapar.edu" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message here" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            """
+            left_column, right_column = st.columns(2)
+            with left_column:
+                st.markdown(contact_form, unsafe_allow_html=True)
+            with right_column:
+                st.empty()
