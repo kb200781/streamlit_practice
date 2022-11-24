@@ -1,8 +1,19 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import webbrowser
+import requests
+from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:", layout="wide")
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_m4wmgweb.json")
+    
 
 selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'], 
     icons=['house', 'question-circle', "twitter", 'envelope'], 
@@ -11,10 +22,16 @@ selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'],
 if selected == "Home":
     st.title("Twitter Sentiment Analysis")
     st.subheader("Hey there!!! :wave: Welcome to our service")
-
-    st.subheader("Wondering what we do?")
-    st.markdown("We **_analyze_** the tweets for you guys to")
-    st.write("1. Clear your doubts\n 2. Authenticity of rumors\n 3. Give you a topic for your gossips\n 4. Help in your philosophical research\n and much more!!!")
+    
+    with st.container():
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.subheader("Wondering what we do?")
+            st.markdown("We **_analyze_** the tweets for you guys to")
+            st.write("1. Clear your doubts\n 2. Authenticity of rumors\n 3. Give you a topic for your gossips\n 4. Help in your philosophical research\n and much more!!!")
+        
+        with right_column:
+            st_lottie(lottie_coding, height=300, key="coding")
 
 if selected == "How to use":
     st.title("You entered how to use")
