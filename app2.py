@@ -35,6 +35,9 @@ if selected == "Home":
             st.write("Go to the Analyze tab to see the magic:sparkles::sparkles:")
         with right_column:
             st_lottie(lottie_coding, height=400, key="coding")
+     
+    with st.container():
+        st.title("How:question::exclamation:")
 
 if selected == "How to use":
     with st.container():
