@@ -158,7 +158,7 @@ if selected == "Contact Us":
 footer="""<style>
 a:link , a:visited{
 color: blue;
-background-color: #ff4b4b;
+background-color: white;
 text-decoration: underline;
 }
 
@@ -169,12 +169,12 @@ text-decoration: underline;
 }
 
 .footer {
-position: absolute;
+position: fixed;
 left: 0;
 bottom: 0;
 height: 100%
 width: 100%;
-background-color: #ff4b4b;
+background-color: white;
 color: black;
 text-align: center;
 }
