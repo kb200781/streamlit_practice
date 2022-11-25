@@ -51,6 +51,7 @@ if selected == "How to use":
         st.image(image)
         st.write("2. There are three options available as shown in the figure")
         image1 = Image.open('img/image1.png')
+        st.image(image1)
 
 if selected == "Analyze":
     st.title("Let's get started")
