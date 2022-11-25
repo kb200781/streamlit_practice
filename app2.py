@@ -155,10 +155,10 @@ if selected == "Contact Us":
 #             with right_column:
             st.empty()
 
-footer="""<style>
+ooter="""<style>
 a:link , a:visited{
 color: blue;
-background-color: white;
+background-color: transparent;
 text-decoration: underline;
 }
 
@@ -172,7 +172,6 @@ text-decoration: underline;
 position: fixed;
 left: 0;
 bottom: 0;
-height: 100%
 width: 100%;
 background-color: white;
 color: black;
