@@ -155,7 +155,7 @@ if selected == "Contact Us":
 #             with right_column:
             st.empty()
 
-ooter="""<style>
+footer="""<style>
 a:link , a:visited{
 color: blue;
 background-color: transparent;
