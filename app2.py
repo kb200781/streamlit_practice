@@ -45,8 +45,8 @@ if selected == "How to use":
     with st.container():
         st.title("Didn't know how to use?!")
         st.subheader("No need to worry, it's very simple")
-        st.write("Just follow the steps listed below:-
-                 1. Firstly, go to the 'Analyze' tab.")
+        st.write("Just follow the steps listed below:-")
+        st.write("1. Firstly, go to the 'Analyze' tab.")
         image = Image.open('img/image.png')
         st.image(image)
 
