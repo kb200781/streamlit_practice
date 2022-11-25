@@ -46,6 +46,7 @@ if selected == "How to use":
         st.write("No need to worry, it's very simple")
 
 if selected == "Analyze":
+    st.title("Let's get started")
     genre = st.radio("What do you want to do",
                      ('I want to analyze the tweets from a twitter account', 'I want to analyze a topic', 'I want to analyze my dataset'))
     
