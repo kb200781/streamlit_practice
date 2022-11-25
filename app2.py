@@ -52,6 +52,13 @@ if selected == "How to use":
         st.write("2. There are three options available as shown in the figure")
         image1 = Image.open('img/image1.png')
         st.image(image1)
+        st.write(" The three options listed are for different types of users")
+        st.write("-> First option is for the purpose if you want to analyze the tweets of a particular twitter account")
+        st.write("-> Second option is used, if you want analyze the tweets for a particular topic or a hashtag")
+        st.write("-> Third option is for the users who have their own dataset of tweets and want to analyze only that tweets")
+        st.write("3. Select the appropriate option and click on the highlighted area 'Click Here >'")
+        image2 = Image.open('img/image2.png')
+        st.image(image2)
 
 if selected == "Analyze":
     st.title("Let's get started")
