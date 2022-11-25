@@ -42,8 +42,14 @@ if selected == "Home":
         with left_column:
             st.markdown('<div style="text-align: justify;">We use a sentiment analysis technique which is very popular in the world of Machine Learning and Natural Language Processing (NLP). Sentiment analysis refers to identifying as well as classifying the sentiments that are expressed in the text source. Tweets are often useful in generating a vast amount of sentiment data upon analysis. These data are useful in understanding the opinion of the people about a variety of topics. Therefore we developed an Automated Machine Learning Sentiment Analysis Model in order to compute the customer perception.</div>', unsafe_allow_html=True)
             st.write("\n")
-#             st.write("Twitter sentiment analysis allows you to keep track of what's being said about your product or service on social media, and can help you detect angry customers or negative mentions before they they escalate. At the same time, Twitter sentiment analysis can provide valuable insights that drive decisions.")
             st.markdown('<div style="text-align: justify;">Twitter sentiment analysis allows you to keep track of what is being said about your product or service on social media, and can help you detect angry customers or negative mentions before they they escalate. At the same time, Twitter sentiment analysis can provide valuable insights that drive decisions.</div>', unsafe_allow_html=True)
+           
+    with st.container():
+        st.subheader("Implementation")
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.markdown('<div style="text-align: justify;">We attempted to do some basic NLP techniques using TextBlob library. The tweets are being extracted using the twitter API named tweepy. After the extracting the dataset we do some pre-processing like stemming, tokenizing, etc. After that we use the inbuilt Naive Bayes model to classify the tweets and display the our analysis to you guys through data visualization.</div>', unsafe_allow_html=True)
+            
 if selected == "How to use":
     with st.container():
         left_col, middle_col, right_col = st.columns(3)
