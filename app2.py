@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import webbrowser
 import requests
 from streamlit_lottie import st_lottie
+from PIL import Image
 
 st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon=":tada:", layout="wide")
 
@@ -43,7 +44,11 @@ if selected == "How to use":
     
     with st.container():
         st.title("Didn't know how to use?!")
-        st.write("No need to worry, it's very simple")
+        st.subheader("No need to worry, it's very simple")
+        st.write("Just follow the steps listed below:-
+                 1. Firstly, go to the 'Analyze' tab.")
+        image = Image.open('img/image.png')
+        st.image(image)
 
 if selected == "Analyze":
     st.title("Let's get started")
