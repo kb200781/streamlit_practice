@@ -37,7 +37,7 @@ if selected == "Home":
             st_lottie(lottie_coding, height=400, key="coding")
      
     with st.container():
-        st.title("How:question::exclamation:")
+        st.subheader("How:question::exclamation:")
 
 if selected == "How to use":
     with st.container():
