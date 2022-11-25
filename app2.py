@@ -158,7 +158,7 @@ if selected == "Contact Us":
 footer="""<style>
 a:link , a:visited{
 color: blue;
-background-color: white;
+background-color: #ff4b4b;
 text-decoration: underline;
 }
 
@@ -169,7 +169,7 @@ text-decoration: underline;
 }
 
 .footer {
-position: relative;
+position: absolute;
 left: 0;
 bottom: 0;
 height: 100%
@@ -180,7 +180,7 @@ text-align: center;
 }
 </style>
 <div class="footer">
-<p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://www.heflin.dev/" target="_blank">Heflin Stephen Raj S</a></p>
+<p>Developed with ❤ by <a style='display: block; text-align: center;'>Team 404 FOUND</a></p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
