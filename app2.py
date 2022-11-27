@@ -121,6 +121,13 @@ if selected == "Analyze":
         
     if genre == "I want to analyze my dataset":
         st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
+        
+    st.subheader("Before going further please read the following instruction :-")
+    st.write("1. Maximum 10 tweets will be displayed due to the data and privacy protection bill")
+    st.write("2. Tweets extraction phase may take some time if number of tweets is large")
+    st.write("3. The analysis is done purely on the basis of some mathematical computation and we aren't responsible for the results")
+    st.write("4. Although it is a result of mathematical coputations but we assure that the results are accurate")
+    st.write("5. We are not intended to target any particular group of people, relegion, culture etc. and not intended to hurt anybody's feelings")
 
 if selected == "Contact Us":
 #     Use local CSS
