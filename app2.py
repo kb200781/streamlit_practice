@@ -16,6 +16,7 @@ def load_lottieurl(url):
 lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_m4wmgweb.json")
 lottie_coding1 = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_qxmkn9ou.json")
 lottie_coding2 = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_mn0yeqfs.json")
+lottie_coding3 = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
     
 
 selected = option_menu(None, ["Home", "How to use", "Analyze", 'Contact Us'], 
@@ -34,7 +35,7 @@ if selected == "Home":
             st.write("1. Clear your doubts\n 2. Authenticity of rumors\n 3. Give you a topic for your gossips\n 4. Help in your philosophical research\n and much more!!!")
             st.write("Go to the Analyze tab to see the magic:sparkles::sparkles:")
         with right_column:
-            st_lottie(lottie_coding, height=400, key="coding")
+            st_lottie(lottie_coding3, height=400, key="coding")
      
     with st.container():
         st.subheader("How?!")
@@ -110,24 +111,31 @@ if selected == "How to use":
 
 if selected == "Analyze":
     st.title("Let's get started")
-    genre = st.radio("What do you want to do",
-                     ('I want to analyze the tweets from a twitter account', 'I want to analyze a topic', 'I want to analyze my dataset'))
-    
-    if genre == "I want to analyze the tweets from a twitter account":
-        st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
+    with st.container():
+        left_column, right_column = st.columns(2)
+        with left_column:
+            genre = st.radio("What do you want to do",
+                             ('I want to analyze the tweets from a twitter account', 'I want to analyze a topic', 'I want to analyze my dataset'))
+
+            if genre == "I want to analyze the tweets from a twitter account":
+                st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
+
+            if genre == "I want to analyze a topic":
+                st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-3.streamlit.app/)")
+
+            if genre == "I want to analyze my dataset":
+                st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
+            
+        with right_column:
+            st_lottie(lottie_coding, height=400, key="coding")
         
-    if genre == "I want to analyze a topic":
-        st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-3.streamlit.app/)")
-        
-    if genre == "I want to analyze my dataset":
-        st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
-        
-    st.subheader("Before going further please read the following instruction :-")
-    st.write("1. Maximum 10 tweets will be displayed due to the data and privacy protection bill")
-    st.write("2. Tweets extraction phase may take some time if number of tweets is large")
-    st.write("3. The analysis is done purely on the basis of some mathematical computation and we aren't responsible for the results")
-    st.write("4. Although it is a result of mathematical coputations but we assure that the results are accurate")
-    st.write("5. We are not intended to target any particular group of people, relegion, culture etc. and not intended to hurt anybody's feelings")
+    with st.container():
+        st.subheader("Before going further please read the following instruction :-")
+        st.write("1. Maximum 10 tweets will be displayed due to the data and privacy protection bill")
+        st.write("2. Tweets extraction phase may take some time if number of tweets is large")
+        st.write("3. The analysis is done purely on the basis of some mathematical computation and we aren't responsible for the results")
+        st.write("4. Although it is a result of mathematical coputations but we assure that the results are accurate")
+        st.write("5. We are not intended to target any particular group of people, relegion, culture etc. and not intended to hurt anybody's feelings")
 
 if selected == "Contact Us":
 #     Use local CSS
