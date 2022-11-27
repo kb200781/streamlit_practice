@@ -127,7 +127,7 @@ if selected == "Analyze":
                 st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
             
         with right_column:
-            st_lottie(lottie_coding, height=400, key="coding")
+            st_lottie(lottie_coding, height=100, key="coding")
         
     with st.container():
         st.subheader("Before going further please read the following instruction :-")
