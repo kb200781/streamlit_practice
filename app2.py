@@ -124,7 +124,7 @@ if selected == "Analyze":
                 st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-3.streamlit.app/)")
 
             if genre == "I want to analyze my dataset":
-                st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-1.streamlit.app/)")
+                st.write("You will be redirected to another website. Please [Click Here >](https://project-se-ts-2.streamlit.app/)")
             
         with right_column:
             st_lottie(lottie_coding, height=250, key="coding")
